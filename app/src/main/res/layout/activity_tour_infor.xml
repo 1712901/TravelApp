@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TourInfor">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#f7696a"
+        android:id="@+id/tourInfoHeader">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:background="@null"
+            android:id="@+id/imbtInfBack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tour Information"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragmentInforTour"
+        android:layout_below="@+id/tourInfoHeader"
+        android:layout_above="@+id/navInfor"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#fff"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_infor_tour"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentBottom="true">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

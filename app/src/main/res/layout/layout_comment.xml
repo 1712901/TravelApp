@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/imbCMClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_remove_sp"
+        android:background="@null"
+        android:layout_alignParentEnd="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imbCMClose"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:text="Rate"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+        <RatingBar
+            android:id="@+id/rtbComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:theme="@style/RatingBar"
+            android:rating="4"/>
+        <EditText
+            android:id="@+id/edtCommnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:background="@drawable/shape_text_input"
+            android:layout_margin="15dp"
+            android:hint="Add a comment"
+            />
+        <Button
+            android:id="@+id/btnSendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

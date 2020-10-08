@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Travel</string>
+    <string name="action_settings">Settings</string>
+    <string name="SERVER_CLIENT_ID">997184154669-50gfv6e30f3t94cnjhbn32rbbaas5l6q.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">2295745257367149</string>
+    <string name="fb_login_protocol_scheme">fb2295745257367149</string>
+    <string name="EMAIL">email</string>
+    <string name="google_map_api_key" translatable="false">AIzaSyDseXH78onL9dVV3cwnCqlmBBUcKHQ3Wxg</string>
+    <string name="txtRegister"><font color="blue"><u>Create new Account</u></font></string>
+    <string name="txtSelect">Select</string>
+    <string-array name="Type_array">
+        <item>Restaurant</item>
+        <item>Hotel</item>
+        <item>Rest Station</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="Gender">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="Type_Recovery">
+        <item>email</item>
+        <item>phone</item>
+    </string-array>
+</resources>

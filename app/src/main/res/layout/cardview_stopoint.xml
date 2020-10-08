@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                fresco:placeholderImage="@drawable/my_drawable"
+                android:id="@+id/imgStopPoint"
+                android:src="@drawable/ic_launcher_foreground"/>
+            <TextView
+                android:id="@+id/txtNameSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="23sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/txtArrivalSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_date"
+                android:text="dd/MM/yyyy HH:mm:ss"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/txtLeaveSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_date"
+                android:text="dd/MM/yyyy HH:mm:ss"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/txtCostSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_cost"
+                android:gravity="center_vertical"
+                android:text="minCost-maxCost"
+                android:textColor="#cfc019"
+                android:textSize="15sp"
+                android:padding="5dp"/>
+            <TextView
+                android:id="@+id/txtAdressSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adress"
+                android:drawableStart="@drawable/ic_location"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_remove_sp"
+            android:background="@null"
+            android:id="@+id/imbtClose"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

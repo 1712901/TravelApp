@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/nav"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#fff"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:background="#000"
+        android:layout_above="@+id/nav"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_main"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentBottom="true">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

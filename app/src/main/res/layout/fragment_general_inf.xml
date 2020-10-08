@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tourInfoHeader"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp">
+            <ImageButton
+                android:id="@+id/imbtInfEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                android:background="@null"
+                android:layout_alignParentEnd="true"/>
+            <ImageButton
+                android:id="@+id/imbtInfCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:background="@null"
+                android:layout_alignParentEnd="true"/>
+            <ImageButton
+                android:id="@+id/imbtInfCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check"
+                android:background="@null"
+                android:layout_toStartOf="@+id/imbtInfCancel"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_below="@+id/tourInfoHeader">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tour name"
+                android:textColor="#000" />
+
+            <EditText
+                android:id="@+id/edtInfTourName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_input"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Min cost"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Max cost"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edInfMinCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_input"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/edInfMaxCost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_input"
+                    android:inputType="number"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start Date"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="End Date"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnInfStartDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_input" />
+
+                <ImageButton
+                    android:id="@+id/imbtStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_date_48dp" />
+
+                <Button
+                    android:id="@+id/btnInfEndDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_input" />
+
+                <ImageButton
+                    android:id="@+id/imbtEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@drawable/ic_date_48dp" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/rdInfIsPrivate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is your private trip ?" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="Stop Points"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imbtAddStopPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_add" />
+            </RelativeLayout>
+
+            <View
+                style="@style/Divider.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcylStopPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="Menbers"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/imbtAddMenber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_add" />
+            </RelativeLayout>
+            <View
+                style="@style/Divider.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcylMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
